@@ -1,7 +1,7 @@
 describe("login page", () => {
     it("should login", () => {
         cy.visit("https://paciente.lacreisaude.com.br/");
-        cy.get('[id="email"]').type("teste_login@teste.com");
+        cy.get('[id="email"]').type("bellssalles@gmail.com");
         cy.get('[id="password"]').type("Teste@123");
         cy.contains("button", "Entrar").click();
         cy.url().should(

@@ -57,7 +57,8 @@ describe("register page", () => {
     cy.visit("https://paciente.lacreisaude.com.br/");
     cy.contains("button", "Criar conta").click();
     cy.contains("button", "Voltar").click();
-    cy.contains("Boas-vindas à Lacrei Saúde").should("be.visible");
+    cy.url()
+    .should('be.equal', 'https://paciente.lacreisaude.com.br/')
   });
 
   it("should show an error indicating email format is wrong", () => {

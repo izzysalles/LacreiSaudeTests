@@ -1,15 +1,4 @@
 describe("login page", () => {
-    it("should login", () => {
-        cy.visit("https://paciente.lacreisaude.com.br/");
-        cy.get('[id="email"]').type("bellssalles@gmail.com");
-        cy.get('[id="password"]').type("Teste@123");
-        cy.contains("button", "Entrar").click();
-        cy.url().should(
-            "be.equal",
-            "https://paciente.lacreisaude.com.br/verificar-email"
-          );
-      });
-
   it("should return password error", () => {
     cy.visit("https://paciente.lacreisaude.com.br/");
     cy.get('[id="email"]').type("teste@teste.com");

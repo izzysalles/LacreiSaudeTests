@@ -26,3 +26,5 @@ Este projeto utiliza o mochawesome, para executar, use o comando:
 ```
 npx cypress run 
 ```
+
+Após a execução, um arquivo html será criado, copie o caminho para ele e cole no navegador para acessar os relatórios

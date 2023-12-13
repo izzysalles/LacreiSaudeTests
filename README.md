@@ -24,5 +24,5 @@ Agora o cypress irá executar e abrir uma janela, selecione a opção e2e e veja
 Este projeto utiliza o mochawesome, para executar, use o comando:
 
 ```
-npx cypress run --reporter mochawesome
+npx cypress run 
 ```
